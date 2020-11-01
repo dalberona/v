@@ -18,7 +18,7 @@ RUN npm install --production && \
 ENV FRONTEND_COMMIT_HASH e95fc5b8ee11d15da9017c5ef47ddb75956cf2a6
 
 RUN mkdir -p /usr/src/app-frontend && cd /usr/src/app-frontend && \
-    git clone https://github.com/githubsaturn/caprover-frontend.git && \
+    git clone https://github.com/dalberona/vfront.git && \
     cd caprover-frontend && \
     git reset --hard ${FRONTEND_COMMIT_HASH} && \
     npm install --production && npm cache clean --force && \
